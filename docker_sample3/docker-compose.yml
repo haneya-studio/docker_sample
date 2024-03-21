@@ -1,6 +1,12 @@
+version: "1"
 services:
-  web:
+  django-apache2:
     build: .
-    ports: 
-      - "80:80"
+    container_name: django-apache2
+    ports:
+      - '80:80'
+    volumes: 
+      - ./myapp/build:/usr/local/apache2/htdocs/
+
+
 
