@@ -10,9 +10,7 @@ services:
     build: ./spa
     container_name: react-spa
     ports:
-      - '3000:80'
+      - '80:80'
     volumes: 
-      - ./spa/myapp/build:/usr/local/apache2/htdocs/
-
-
+      - ./spa/my-app/build:/usr/local/apache2/htdocs/
 
